@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 基本 */
+body{ margin:0px; background:#f7f7f7; font-family: Arial, SimSun, san-serif; }
+
+
+.page { margin:0 auto; text-align:center;}
+
+	.s_table{}
+		.s_table table{ margin:0 auto; color:#333333; font-size:15px; line-height:28px; background:#ffffff; border:1px solid #ec4078; border-radius:5px;}
+			.s_table th{ color:#ec4078; text-align:right; vertical-align:top;}
+			.s_table td{}
+			
+			.s_table table td:nth-child(1){ height:40px; color:#ffffff; font-size:21px; font-weight:bold; text-align:center; background:#ec4078; border-top-left-radius:5px; border-top-right-radius:5px;}
+			
+			
+		.btn_box{ margin:40px 0 10px 0; padding:0 18px; overflow-wrap:break-word;}
+			.btn_box .btn_s{ margin:0; width:180px; font-size:16px; color:#ffffff; text-align: center; line-height:40px; background:#ec4078; border:none; border-radius:5px; outline: none;}
+			.btn_box .btn_s:hover{ background:#f5568a;}
+			.btn_box .btn_s:active{ background:#df3c71;}
+
+	
+	
+/* 尾部 */
+.footer{ width:100%; margin:0 auto; margin-top:50px; color:#717171; text-align:center;}
+.wrap{ margin:0 auto;}
+	.copyright{ color:#626262;}
+	
+	
+	
+
+
+
+/* 各別規格 */
+@media screen and (min-width:768px){
+
+	.s_table{ margin:50px;}
+		.s_table table{ width:440px;}
+			.s_table th{ padding:5px 10px; width:58%;}
+			.s_table td{ padding:5px 10px;}
+	
+/* 尾部 */
+.footer{ font-size:14px;}	
+							
+	}
+		
+	
+	
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+	.s_table{ margin:20px;}
+		.s_table table{ width:99%;}
+			.s_table th{ padding:5px 10px; width:58%;}
+			.s_table td{ padding:5px 10px;}
+	
+/* 尾部 */
+.footer{ font-size:14px;}
+	
+							
+	}
+	
+	
+	
+@media screen and (min-width: 411px) and (max-width: 479px){
+
+	.s_table{ margin:10px;}
+		.s_table table{ width:99%;}
+			.s_table th{ padding:4px; width:60%;}
+			.s_table td{ padding:4px;}
+	
+/* 尾部 */
+.footer{ font-size:12px;}
+	
+							
+	}
+	
+	
+	
+@media screen and (min-width: 375px) and (max-width: 410px){
+
+	.s_table{ margin:10px;}
+		.s_table table{ width:99%;}
+			.s_table th{ padding:1px 5px; width:67%;}
+			.s_table td{ padding:1px 10px;}
+	
+/* 尾部 */
+.footer{ font-size:12px;}
+	
+							
+	}
+	
+	
+	
+@media screen and (min-width: 360px) and (max-width: 374px){
+
+	.s_table{ margin:10px;}
+		.s_table table{ width:99%;}
+			.s_table th{ padding:0 3px; width:68%;}
+			.s_table td{ padding:0 8px;}
+	
+/* 尾部 */
+.footer{ font-size:12px;}
+	
+							
+	}
+	
+	
+
+@media only screen and (max-width:359px){
+
+	.s_table{ margin:10px;}
+		.s_table table{ width:99%; font-size:13px; line-height:24px;}
+			.s_table th{ padding:0 3px; width:67%;}
+			.s_table td{ padding:0 8px;}
+			
+			.s_table table td:nth-child(1){ height:30px; font-size:18px;}
+			
+			
+		.btn_box{ margin:20px 0 10px 0; padding:0 10px; font-size:14px;}
+			
+			.btn_box .btn_s{ font-size:14px; line-height:30px;}
+	
+/* 尾部 */
+.footer{ font-size:12px;}
+	
+							
+	}
+
+[v-cloak] {
+	display: none;
+}
+	

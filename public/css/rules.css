@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 基本 */
+
+html, body, .page {height: 100%;}
+body > .page {height: auto; min-height: 100%;}
+
+* {-webkit-tap-highlight-color: transparent;}
+
+.page {}
+
+body{ margin:0px; background:#f7f7f7; font-family: Arial, SimSun, san-serif; }
+a{ outliine:none; text-decoration:none;}
+
+
+/* 上方title與按鈕 */
+.main{ clear:both;}
+
+.rule{}	
+			
+
+/* 中間內文外框 */
+.rule_content{ clear:both; padding:10px;}
+	.r_c_box{ padding:0 10px;}
+		.r_c_box a.b{ color:#4692ee;}
+		.r_c_box a.b:hover{ color:#ff7d51;}
+
+
+/* terms服務條款 */
+.terms { color:#666666;}
+	.terms p { font-size:13px; line-height:200%;}
+	.terms .first { margin:40px 0 50px 20px; list-style:decimal; padding-left:0px;}
+		.terms .first > li { font-size:15px; font-weight:bold; line-height:40px; letter-spacing:1px;}
+	
+	.terms .second { margin:0 0 40px 0; list-style:disc; padding-left:20px;}
+		.terms .second > li{ margin-bottom:15px; font-size:13px; font-weight:normal; line-height:20px; letter-spacing:1px;}
+		.terms .second strong {	font-weight:bold;}
+	
+	.terms .third { list-style:lower-roman; padding-left:20px;}
+		.terms .third > li { margin-top:10px; font-size:13px; font-weight:normal; line-height:20px;	letter-spacing:1px;}
+		
+	.terms .smail { color:#2f81e4; text-decoration:underline;}
+	
+
+/* privacy隱私權政策 */
+.privacy { color:#666666;}
+	.privacy p { font-size:13px; line-height:200%;}
+	.privacy .first { margin:40px 0 50px 20px; list-style:decimal; padding-left:0px;}
+		.privacy .first > li { font-size:15px; font-weight:bold; line-height:40px; letter-spacing:1px;}
+	
+	.privacy .second { margin:0 0 40px 0; list-style:upper-roman; padding-left:20px;}
+		.privacy .second > li{ margin-bottom:15px; font-size:13px; font-weight:normal; line-height:20px; letter-spacing:1px;}
+		.privacy .second strong { font-weight:bold;}
+		
+	.privacy .second2 { margin:0 0 40px 0; list-style:none; padding-left:0;}
+		.privacy .second2 > li{ margin-bottom:15px; font-size:13px; font-weight:normal; line-height:20px; letter-spacing:1px;}
+		.privacy .second2 strong { font-weight:bold;}
+		
+		
+	
+	.privacy .third { padding:0; padding-left:0px;}
+		.privacy .third > li { margin-top:10px; font-size:13px; font-weight:normal; line-height:20px;	letter-spacing:1px;}
+	
+	.privacy .fourth { list-style: none; padding-left:0px;}
+		.privacy .fourth > li { }	
+		
+	.privacy .five { list-style:lower-roman; padding-left:20px;}
+		.privacy .third > li { margin-top:10px; font-size:13px; font-weight:normal; line-height:20px;	letter-spacing:1px;}
+		
+	.privacy .lower-roman { margin-left:20px; list-style:disc;}
+	.privacy .disc { list-style:disc; margin-left:20px;}
+	
+	.privacy .smail { color:#2f81e4; text-decoration:underline;}	
+
+
+.item{}
+	li{ font-size: 13px; line-height: 200%;}

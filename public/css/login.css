@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { margin:0; padding:0; background:#ffffff; font-family:arial,helvetica,clean,sans-serif;}
+
+  .main_box{ background: url(../images/adminBg.jpg) center center; width:auto; height:90vh; background-size:cover; overflow:hidden;}
+
+    /*頁首*/
+    .header{ width:100%; height:80px; color:#fff; font-size:36px; line-height:80px; font-weight:bold; text-align:center; background:rgba(12,124,187,0.8); font-family:微軟正黑體;}
+    .header_line{ width:100%; height:10px; background:rgba(0,0,0,0.8);}
+
+
+    /*登入*/
+    .login_box{ width:300px; margin:0 auto; margin-top:10%; padding:20px 60px; background:rgba(255,255,255,0.9); box-shadow: 0 0 10px 5px rgba(131, 131, 131,0.4);}
+      .title{ color:#0c7cbb; text-align:center; font-weight:bold; font-family:微軟正黑體;}
+        .title_e{ font-size:36px; margin-right:20px;}
+        .title_c{ font-size:18px;}
+
+      .item{ clear:both; height:40px; margin-top:15px; border-bottom:1px solid #0c7cbb;}
+      .item:hover{ border-bottom:1px solid #ea68a2;}
+      .item2{ clear:both; height:40px; margin-top:15px;}
+
+        .account_icon{ float:left; width:20px; height:20px; margin-top:5px\0; background:url(../images/login_icon.png) 0 0 no-repeat;}
+        .secret_icon{ float:left; width:20px; height:20px; margin-top:5px\0; background:url(../images/login_icon.png) -20px 0 no-repeat;}
+        .verify_icon{ float:left; width:20px; height:20px; margin-top:5px\0; background:url(../images/login_icon.png) -40px 0 no-repeat;}
+
+
+          @media screen and (-webkit-min-device-pixel-ratio:0) {
+          /* Safari and Chrome, if Chrome rule needed */
+          .account_icon, .secret_icon, .verify_icon{ margin-top:5px;}
+
+          /* Safari 5+ ONLY */
+              ::i-block-chrome, .account_icon, .secret_icon, .verify_icon{ margin-top:5px;}
+        }
+          @-moz-document url-prefix(){
+            .account_icon, .secret_icon, .verify_icon{ margin-top:8px;}
+        } /*firefox*/
+
+
+
+        .item_input{ float:left; margin-left:10px; color:#434343;}
+          .iinput{ width:240px; height:30px; margin-left:5px; padding:0 7px; font-size:16px; background:none; border:none; outline: none;}
+
+            /* input提示文字 */
+            ::-webkit-input-placeholder { color: #b5b5b5; text-transform: none; opacity: 1;}
+            ::-moz-placeholder { color: #b5b5b5; text-transform: none; opacity: 1;} /* firefox 19+ */
+            :-ms-input-placeholder { color: #b5b5b5; text-transform: none; opacity: 1;} /* ie */
+            input:-moz-placeholder { color: #b5b5b5; text-transform: none; opacity: 1;}
+
+
+        .verify_title{ float:left; margin-left:45px; color:#a5aeb2; font-size:16px; line-height:30px;}
+        .verify_num{ float:left; margin-left:10px; padding:0 10px; color:#434343; font-size:16px; line-height:30px; background:#fff; border:1px solid #0c7cbb;}
+        .verify_renew{ float:left; margin-left:30px;}
+          .verify_renew a{ color:#f39700; font-size:16px; line-height:30px; outline: none;}
+          .verify_renew a:hover{ color:#f5c068;}
+
+
+
+          .login_btn{ float:right;}
+            .login_btn input{ width:120px; height:40px; background:#0c7cbb; border:none; border-radius:5px; color:#ffffff; font-size:16px; cursor:pointer; outline: none;}
+            .login_btn input:hover{background:#0d85c8;}
+            .login_btn input:active{background:#0c73ad;}
+
+
+  /*頁尾*/
+  .footer{ position:fixed; bottom:0;}
+    .contact{ width:100vw; height:80px; color:#333; font-size:15px; line-height:80px; text-align:center; background: url(../images/call_bg.png)center center;}
+
+    .version{ width:100vw; height:40px; color:#6f96ab; font-size:16px; line-height:40px; text-align:center; background:#0a3752;}

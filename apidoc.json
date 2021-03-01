@@ -1,0 +1,9 @@
+{
+  "name": "liuliu API文档",
+  "version": "v1.0.0",
+  "description": "",
+  "apidoc": {
+    "title": "liuliu API文档",
+    "url" : "https://liuliu.com/docapidoc -i myapp/ -o apidoc/ -t mytemplate/"
+  }
+}

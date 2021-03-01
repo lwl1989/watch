@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 共用規格 */
+a, a:active { text-decoration:none; outline: none;}
+
+input , button { outline: none;}
+
+body { background:#f4f5f7; margin: 0 auto; padding:0; font-family:arial,helvetica,clean,sans-serif; overflow:auto; overflow-x: hidden;}
+
+.page { margin: 0 auto;}
+
+
+	/*照片影片區*/
+	#tabsC{ clear:both; padding:0px; margin:0px; width:100vw; background:#ffffff; overflow: hidden;}
+	
+	#tabsF{ width:100%; margin:0; padding:0; background:#ffffff;}
+		#tabsF ul{ margin:0; padding:0; list-style:none; overflow:auto;}
+			#tabsF li{ float:left; margin:0; padding:0; width:50vw; text-align:center;}
+				#tabsF a{ margin:0;}
+					#tabsF a div{ display:block; color:#999999;}
+					#tabsF a:active div { color:#ec4078;}
+					
+					
+					#tabsF a div.tab_bg1{ background:url(../images/scenic/btn_picture.png) no-repeat;}
+					#tabsF a:active div.tab_bg1{ background:url(../images/scenic/btn_picture_h.png) no-repeat;}
+					
+					
+					#tabsF a div.tab_bg2{ background:url(../images/scenic/btn_video.png) no-repeat;}
+					#tabsF a:active div.tab_bg2{ background:url(../images/scenic/btn_video_h.png) no-repeat;}
+					
+
+					#tabsF #current a{ color:#ec4078;}
+						#tabsF #current a div{ color:#ec4078;}
+					
+					#tabsF #current a div.tab_bg1{ background:url(../images/scenic/btn_picture_h.png) no-repeat;}
+					#tabsF #current a div.tab_bg2{ background:url(../images/scenic/btn_video_h.png) no-repeat;}
+					
+					
+					
+		/*照片*/
+    	.swiper-container { width: 100%;}
+    	.swiper-slide { text-align: center; background:#ffffff;
+						/* Center slide text vertically */
+						display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+						-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+						
+			.swiper-slide img{ width:100%; height:auto;}
+			
+		/*影片*/
+		.video_show{ width:100vw; height:62.5vw;}
+			.video_show iframe{ width:100%; height:100%;}
+			
+
+
+	/*景點名稱區*/
+	.scenic_spots{ font-weight:bold; background:#ffffff;}
+
+
+
+	/*語音區*/
+	.speech{ background:#ffffff; overflow:hidden;}
+		.speech_w{ float:left; color:#ec4078;}
+		.speech_item{ float:right;}
+			.speech_item a{ display:block; background:#ffffff; color:#ec4078; border:1px solid #ec4078; text-align:center; border-radius:5px;}
+			.speech_item a:active{ background:#ec4078; color:#ffffff; border:1px solid #ec4078;}
+		.speech_listen{ float:right;}
+			.speech_listen a{ display:block; background:#ec4078; color:#ffffff; border:1px solid #ec4078; text-align:center;border-radius:5px;}
+	
+
+	/* main */
+	.main{ background:#ffffff; color:#494949; line-height:1.5em; letter-spacing: 1px; overflow-wrap:break-word;}
+		.foreword{ color:#007CBB; border-bottom:1px solid #f4f4f4;}
+		.c_title{ color:#212121; font-weight:bold;}
+		.m_title{ color:#f39c12; font-weight:bold;}
+		.p_title{ color:#ec4078; font-weight:bold;}
+		
+		.main a{ color:#008c8e; text-decoration:underline;}
+		.c_photo{}
+			.main img{ width:100%;}
+			
+		.blank{ height:10px; border-bottom:1px solid #f4f4f4;}
+	
+		
+			
+		
+		
+/* 各別規格 */
+@media screen and (min-width:768px){
+
+.page { width:638px;}
+
+
+	/*照片影片區*/
+	#tabsC{ width:100%;}
+	
+	#tabsF{ margin-bottom:20px; font-size:20px;}
+	
+			#tabsF li{ width:50%;}
+			
+					#tabsF a div.tab_bg1, #tabsF a:active div.tab_bg1, #tabsF a div.tab_bg2, #tabsF a:active div.tab_bg2, #tabsF #current a div.tab_bg1, #tabsF #current a div.tab_bg2{ background-size:319px 106px;}
+				
+					#tabsF a div{ padding:68px 0 15px 0;}
+			
+		/*影片*/
+		.video_show{ width:638px; height:479px;}
+			
+
+	/*景點名稱區*/
+	.scenic_spots{ padding:20px; font-size:1.875em;}
+
+
+
+	/*語音區*/
+	.speech{ margin-top:20px; padding:20px;}
+		.speech_w{ font-size:21px; line-height:42px;}
+		.speech_item{ margin-left:25px;}
+			.speech_item a{ width:100px; height:42px; font-size:21px; line-height:42px;}
+			.speech_item a:active{}
+		.speech_listen{ margin-left:25px;}
+			.speech_listen a{ width:100px; height:42px; font-size:21px; line-height:42px;}
+	
+
+	/* main */
+	.main{ margin-top:20px; padding:20px; font-size:16px;}
+		.foreword{ padding-bottom:20px; font-size:16px;}
+		.c_title{ padding-top:20px; font-size:18px;}
+		.m_title{ margin-top:20px; font-size:21px;}
+		.p_title{ margin-top:20px; font-size:21px;}
+		.c_photo{ margin:20px 0;}
+	
+	
+		
+	}
+	
+	
+	
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+	
+	/*照片影片區*/
+	#tabsF{ margin-bottom:20px; font-size:16px;}
+			
+					#tabsF a div.tab_bg1, #tabsF a:active div.tab_bg1, #tabsF a div.tab_bg2, #tabsF a:active div.tab_bg2, #tabsF #current a div.tab_bg1, #tabsF #current a div.tab_bg2{ background-size:50vw 100%;}
+				
+					#tabsF a div{ padding:50px 0 12px 0;}
+			
+
+	/*景點名稱區*/
+	.scenic_spots{ padding:20px; font-size:1.875em;}
+
+
+
+	/*語音區*/
+	.speech{ margin-top:20px; padding:20px;}
+		.speech_w{ font-size:18px; line-height:32px;}
+		.speech_item{ margin-left:20px;}
+			.speech_item a{ width:78px; height:32px; font-size:18px; line-height:32px;}
+			.speech_item a:active{}
+		.speech_listen{ margin-left:20px;}
+			.speech_listen a{ width:78px; height:32px; font-size:18px; line-height:32px;}
+	
+
+	/* main */
+	.main{ margin-top:20px; padding:20px; font-size:16px;}
+		.foreword{ padding-bottom:20px; font-size:16px;}
+		.c_title{ padding-top:20px; font-size:18px;}
+		.m_title{ margin-top:20px; font-size:21px;}
+		.p_title{ margin-top:20px; font-size:21px;}
+		.c_photo{ margin:20px 0;}
+	
+	
+		
+	}
+
+	
+	
+@media screen and (min-width: 411px) and (max-width: 479px){
+	
+	/*照片影片區*/
+	#tabsF{ margin-bottom:17px; font-size:15px;}
+			
+					#tabsF a div.tab_bg1, #tabsF a:active div.tab_bg1, #tabsF a div.tab_bg2, #tabsF a:active div.tab_bg2, #tabsF #current a div.tab_bg1, #tabsF #current a div.tab_bg2{ background-size:50vw 100%;}
+				
+					#tabsF a div{ padding:43px 0 10px 0;}
+			
+
+	/*景點名稱區*/
+	.scenic_spots{ padding:17px; font-size:1.7em;}
+
+
+
+	/*語音區*/
+	.speech{ margin-top:17px; padding:17px;}
+		.speech_w{ font-size:15px; line-height:32px;}
+		.speech_item{ margin-left:17px;}
+			.speech_item a{ width:67px; height:28px; font-size:15px; line-height:28px;}
+			.speech_item a:active{}
+		.speech_listen{ margin-left:17px;}
+			.speech_listen a{ width:67px; height:28px; font-size:15px; line-height:28px;}
+	
+
+	/* main */
+	.main{ margin-top:17px; padding:17px; font-size:16px;}
+		.foreword{ padding-bottom:17px; font-size:16px;}
+		.c_title{ padding-top:17px; font-size:18px;}
+		.m_title{ margin-top:17px; font-size:21px;}
+		.p_title{ margin-top:17px; font-size:21px;}
+		.c_photo{ margin:17px 0;}
+	
+	
+				
+				
+	}
+	
+	
+	
+@media screen and (min-width: 375px) and (max-width: 410px){
+	
+	/*照片影片區*/
+	#tabsF{ margin-bottom:16px; font-size:14px;}
+			
+					#tabsF a div.tab_bg1, #tabsF a:active div.tab_bg1, #tabsF a div.tab_bg2, #tabsF a:active div.tab_bg2, #tabsF #current a div.tab_bg1, #tabsF #current a div.tab_bg2{ background-size:50vw 100%;}
+				
+					#tabsF a div{ padding:39px 0 9px 0;}
+			
+
+	/*景點名稱區*/
+	.scenic_spots{ padding:16px; font-size:1.7em;}
+
+
+
+	/*語音區*/
+	.speech{ margin-top:16px; padding:16px;}
+		.speech_w{ font-size:14px; line-height:32px;}
+		.speech_item{ margin-left:16px;}
+			.speech_item a{ width:61px; height:26px; font-size:14px; line-height:26px;}
+			.speech_item a:active{}
+		.speech_listen{ margin-left:16px;}
+			.speech_listen a{ width:61px; height:26px; font-size:14px; line-height:26px;}
+	
+
+	/* main */
+	.main{ margin-top:16px; padding:16px; font-size:16px;}
+		.foreword{ padding-bottom:16px; font-size:16px;}
+		.c_title{ padding-top:16px; font-size:18px;}
+		.m_title{ margin-top:16px; font-size:21px;}
+		.p_title{ margin-top:16px; font-size:21px;}
+		.c_photo{ margin:16px 0;}
+	
+				
+				
+	}
+			
+				
+
+
+
+@media screen and (min-width: 360px) and (max-width: 374px){
+	
+	/*照片影片區*/
+	#tabsF{ margin-bottom:15px; font-size:13px;}
+			
+					#tabsF a div.tab_bg1, #tabsF a:active div.tab_bg1, #tabsF a div.tab_bg2, #tabsF a:active div.tab_bg2, #tabsF #current a div.tab_bg1, #tabsF #current a div.tab_bg2{ background-size:50vw 100%;}
+				
+					#tabsF a div{ padding:38px 0 9px 0;}
+			
+
+	/*景點名稱區*/
+	.scenic_spots{ padding:15px; font-size:1.7em;}
+
+
+
+	/*語音區*/
+	.speech{ margin-top:15px; padding:15px;}
+		.speech_w{ font-size:14px; line-height:25px;}
+		.speech_item{ margin-left:15px;}
+			.speech_item a{ width:59px; height:25px; font-size:14px; line-height:25px;}
+			.speech_item a:active{}
+		.speech_listen{ margin-left:15px;}
+			.speech_listen a{ width:59px; height:25px; font-size:14px; line-height:25px;}
+	
+
+	/* main */
+	.main{ margin-top:15px; padding:15px; font-size:16px;}
+		.foreword{ padding-bottom:15px; font-size:16px;}
+		.c_title{ padding-top:15px; font-size:18px;}
+		.m_title{ margin-top:15px; font-size:21px;}
+		.p_title{ margin-top:15px; font-size:21px;}
+		.c_photo{ margin:15px 0;}
+	
+				
+				
+}
+
+
+
+
+@media only screen and (max-width:359px){
+	
+	/*照片影片區*/
+	#tabsF{ margin-bottom:13px; font-size:12px;}
+			
+					#tabsF a div.tab_bg1, #tabsF a:active div.tab_bg1, #tabsF a div.tab_bg2, #tabsF a:active div.tab_bg2, #tabsF #current a div.tab_bg1, #tabsF #current a div.tab_bg2{ background-size:50vw 100%;}
+				
+					#tabsF a div{ padding:33px 0 8px 0;}
+			
+
+	/*景點名稱區*/
+	.scenic_spots{ padding:13px; font-size:1.5em;}
+
+
+
+	/*語音區*/
+	.speech{ margin-top:13px; padding:13px;}
+		.speech_w{ font-size:12px; line-height:22px;}
+		.speech_item{ margin-left:13px;}
+			.speech_item a{ width:52px; height:22px; font-size:12px; line-height:22px;}
+			.speech_item a:active{}
+		.speech_listen{ margin-left:13px;}
+			.speech_listen a{ width:52px; height:22px; font-size:12px; line-height:22px;}
+	
+
+	/* main */
+	.main{ margin-top:13px; padding:13px; font-size:15px;}
+		.foreword{ padding-bottom:13px; font-size:15px;}
+		.c_title{ padding-top:13px; font-size:17px;}
+		.m_title{ margin-top:13px; font-size:20px;}
+		.p_title{ margin-top:13px; font-size:20px;}
+		.c_photo{ margin:13px 0;}
+			
+	
+							
+	}
+			

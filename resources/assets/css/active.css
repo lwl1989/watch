@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 共用規格 */
+a, a:active { text-decoration:none; outline: none;}
+
+input , button { outline: none;}
+
+body { background:#e8e8e8; margin: 0 auto; padding:0; font-family:arial,helvetica,clean,sans-serif; overflow:auto; overflow-x: hidden;}
+
+.page { margin: 0 auto; padding-bottom:20px; background:#f4f4f4; overflow:hidden;}
+
+	/*下載資訊*/
+	.ttpush_info{ position: fixed; top:0; z-index:10; width:100%; background:#ffffff; border-bottom:2px solid #ec4078;}
+		.ttpush_logo{ float:left;}
+			.ttpush_logo img{}
+		.topic{ float:left;}
+			.ttpush_mtopic{ color:#666666;}
+			.ttpush_stopic{ color:#ec4078;}
+		.btn_d{ float:right; display:block; color:#ffffff; text-align:center; background:#ec4078; border-radius:5px;}
+			
+			
+			
+
+
+	/* main */
+	.main{ position: relative; margin:0 auto; z-index:4;}
+	
+		.cover{ background:#000000;}
+			.cover_show{ position: relative; text-align:center;}
+			
+				/* 有圖 */
+				.csp{ width:100%; height:0; padding-bottom: 59.73%; overflow:hidden; background-position: center center; background-repeat: no-repeat; -webkit-background-size:cover; -moz-background-size:cover; background-size:cover;}
+			 
+	
+		.t_caption{}
+			.t_caption h1{ margin:0; padding:20px 18px 0 18px; color:#000000; font-size:24px; line-height:1.17em; font-weight:700; overflow-wrap:break-word; word-wrap:break-word;}
+		
+		
+		.t_ds{ margin:12px 18px 0 18px;; overflow:hidden;}
+			.t_date{ float:left; color:#aaa; font-size:15px; line-height:30px;}
+			
+		
+		.t_content{ padding:0 18px; color:#000000; font-size:16px; line-height:1.41em; font-weight:400; overflow-wrap:break-word;}
+		
+			p{ margin:10px 0;}
+			
+				a{ color:#107afd;}
+		
+			.t_content img{ max-width:100%; height:auto;}
+			
+			.t_content video{ max-width:100%; height:auto; background:#000000;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{}
+			
+			.t_content span{}
+			
+			blockquote{ margin:10px 0;}
+			figure{ margin:10px 0;}
+			
+			
+			
+		.btn_box{ margin:25px 0 10px 0; padding:0 18px; color:#666666; font-size:16px; line-height:1.41em; overflow-wrap:break-word;}
+			.btn_box p{}
+			
+			
+			.btn_box .btn_p{ margin:0; width:180px; font-size:16px; color:#ffffff; text-align: center; line-height:40px; background:#ec4078; border:none; border-radius:5px; outline: none;}
+			.btn_box .btn_p:hover{ background:#f5568a;}
+			.btn_box .btn_p:active{ background:#df3c71;}
+
+			
+		
+		
+/* 各別規格 */
+@media screen and (min-width:768px){
+
+.page { width:638px; background-size:100% 250px; min-height:100vh;}
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px; width:638px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+			
+			
+			
+
+
+	/* main */
+	.main{ margin-top:56px;}
+				.cover_show video{ max-height:638px;}
+				
+			.t_content img{ margin:10px 0;}
+			
+			.t_content video{ margin:10px 0;}
+			
+			.t_content .embed-responsive{ margin:10px 0;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{ margin:10px 0;}
+	
+	
+		
+	}
+	
+	
+	
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+			
+			
+			
+
+
+	/* main */	
+	.main{ margin-top:56px;}	
+			.t_content img{ margin:0;}
+			
+			.t_content video{ margin:0;}
+			
+			.t_content .embed-responsive{ margin:0;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{ margin:0;}
+	
+	
+		
+	}
+
+	
+	
+@media screen and (min-width: 411px) and (max-width: 479px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+			
+			
+			
+
+
+	/* main */	
+	.main{ margin-top:56px;}
+			.t_content img{ margin:0;}
+			
+			.t_content video{ margin:0;}
+			
+			.t_content .embed-responsive{ margin:0;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{ margin:0;}
+	
+	
+				
+				
+	}
+	
+	
+	
+@media screen and (min-width: 375px) and (max-width: 410px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+			
+			
+			
+
+
+	/* main */	
+	.main{ margin-top:56px;}
+			.t_content img{ margin:0;}
+			
+			.t_content video{ margin:0;}
+			
+			.t_content .embed-responsive{ margin:0;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{ margin:0;}
+	
+				
+				
+	}
+			
+				
+
+
+
+@media screen and (min-width: 360px) and (max-width: 374px){
+
+	/*下載資訊*/
+	.main{ margin-top:56px;}
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+			
+			
+			
+
+
+	/* main */	
+			.t_content img{ margin:0;}
+			
+			.t_content video{ margin:0;}
+			
+			.t_content .embed-responsive{ margin:0;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{ margin:0;}
+	
+				
+				
+}
+
+
+
+
+@media only screen and (max-width:359px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:46px;}
+		.ttpush_logo{ margin-top:9px; margin-left:9px; margin-right:7px;}
+			.ttpush_logo img{ width:28px; height:28px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:8px; font-size:12px;}
+			.ttpush_stopic{ margin-top:0; margin-left:-18px; font-size:10px;}
+					@media screen and (-webkit-min-device-pixel-ratio:0) {
+						/* Safari and Chrome, if Chrome rule needed */
+							.ttpush_stopic{ -webkit-transform:scale(0.83);}
+						/* Safari 5+ ONLY */
+							::i-block-chrome, .ttpush_stopic{ font-size:10px;}
+						}
+						@-moz-document url-prefix(){
+							.ttpush_stopic{ font-size:10px;}
+							} /*firefox*/
+		.btn_d{ width:65px; height:28px; margin-top:9px; margin-right:7px; font-size:12px; line-height:28px;}
+			
+			
+			
+
+
+	/* main */	
+	.main{ margin-top:46px;}
+			.t_content img{ margin:0;}
+			
+			.t_content video{ margin:0;}
+			
+			.t_content .embed-responsive{ margin:0;}
+				
+			.t_content h1, .t_content h2, .t_content h3, .t_content h4, .t_content h5, .t_content h6{ margin:0;}
+	
+							
+	}
+			

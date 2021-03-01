@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 共用規格 */
+* {-webkit-tap-highlight-color: transparent;}
+
+a, a:hover, a:active { text-decoration:none; outline: none;}
+
+input , button { outline: none;}
+
+body { background:#f4f4f4; margin: 0 auto; padding:0; font-family: Helvetica,"Microsoft Yahei",Arial,sans-serif; overflow:auto; overflow-x: hidden;}
+
+.page { margin: 0 auto; font-family:微軟正黑體;}
+
+	/*下載資訊*/
+	.ttpush_info{ width:100%; background:#ffffff; border-bottom:2px solid #ec4078;}
+		.ttpush_logo{ float:left;}
+			.ttpush_logo img{}
+		.topic{ float:left;}
+			.ttpush_mtopic{ color:#666666;}
+			.ttpush_stopic{ color:#ec4078;}
+		.btn_d{ float:right; display:block; color:#ffffff; text-align:center; background:#ec4078; border-radius:5px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+		.vp_box ul{ margin:0; padding:0;}
+			.vp_box li{ list-style:none; margin-bottom:4px; background:#ffffff; overflow:hidden;}
+				.vp_img{ float:left; overflow:hidden;}
+					.zoomImage{width:100%; height:0; padding-bottom: 62.5%; overflow:hidden; background-position: center center; background-repeat: no-repeat; -webkit-background-size:cover; -moz-background-size:cover; background-size:cover;}
+				.vp_data{ float:left; margin-left:10px;}
+					.p_title{ color:#000000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+					.p_describe{ color:#999999; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+	
+
+
+
+/* 各別規格 */
+@media screen and (min-width:768px){
+
+.page { width:638px;}
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px; width:638px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+	
+			.vp_box li{ padding:25px 20px;}
+				.vp_img{ width:180px; height:113px; border-radius:10px;}
+				.vp_data{ width:calc(100% - 190px);}
+					.p_title{ font-size:24px;}
+					.p_describe{ margin-top:20px; font-size:20px; line-height:35px; height:70px;}
+		
+			
+	}
+	
+	
+	
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+	
+			.vp_box li{ padding:20px 15px;}
+				.vp_img{ width:135px; height:84px; border-radius:10px;}
+				.vp_data{ width:calc(100% - 145px);}
+					.p_title{ font-size:18px;}
+					.p_describe{ margin-top:15px; font-size:16px; line-height:26px; height:52px;}
+			
+			
+	}
+
+	
+	
+@media screen and (min-width: 411px) and (max-width: 479px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+	
+			.vp_box li{ padding:17px 13px;}
+				.vp_img{ width:116px; height:73px; border-radius:9px;}
+				.vp_data{ width:calc(100% - 126px);}
+					.p_title{ font-size:15px;}
+					.p_describe{ margin-top:13px; font-size:14px; line-height:22px; height:44px;}
+			
+			
+	}
+	
+	
+	
+@media screen and (min-width: 375px) and (max-width: 410px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+	
+			.vp_box li{ padding:16px 12px;}
+				.vp_img{ width:105px; height:66px; border-radius:8px;}
+				.vp_data{ width:calc(100% - 115px);}
+					.p_title{ font-size:14px;}
+					.p_describe{ margin-top:12px; font-size:13px; line-height:20px; height:40px;}
+			
+			
+	}
+			
+				
+
+
+
+@media screen and (min-width: 360px) and (max-width: 374px){
+
+	/*下載資訊*/
+	.main{ margin-top:56px;}
+	.ttpush_info{ height:56px;}
+		.ttpush_logo{ margin-top:13px; margin-left:12px; margin-right:9px;}
+			.ttpush_logo img{ width:30px; height:30px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:11px; font-size:13px;}
+			.ttpush_stopic{ margin-top:3px; font-size:11px;}
+		.btn_d{ width:75px; height:30px; margin-top:13px; margin-right:9px; font-size:13px; line-height:30px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+	
+			.vp_box li{ padding:16px 12px;}
+				.vp_img{ width:100px; height:63px; border-radius:8px;}
+					.vp_img img{}
+				.vp_data{ width:calc(100% - 110px);}
+					.p_title{ font-size:14px;}
+					.p_describe{ margin-top:12px; font-size:13px; line-height:20px; height:40px;}
+			
+			
+}
+
+
+
+
+@media only screen and (max-width:359px){
+
+	/*下載資訊*/
+	.ttpush_info{ height:46px;}
+		.ttpush_logo{ margin-top:9px; margin-left:9px; margin-right:7px;}
+			.ttpush_logo img{ width:28px; height:28px;}
+		.topic{}
+			.ttpush_mtopic{ margin-top:8px; font-size:12px;}
+			.ttpush_stopic{ margin-top:0; margin-left:-18px; font-size:10px;}
+					@media screen and (-webkit-min-device-pixel-ratio:0) {
+						/* Safari and Chrome, if Chrome rule needed */
+							.ttpush_stopic{ -webkit-transform:scale(0.83);}
+						/* Safari 5+ ONLY */
+							::i-block-chrome, .ttpush_stopic{ font-size:10px;}
+						}
+						@-moz-document url-prefix(){
+							.ttpush_stopic{ font-size:10px;}
+							} /*firefox*/
+		.btn_d{ width:65px; height:28px; margin-top:9px; margin-right:7px; font-size:12px; line-height:28px;}
+				
+				
+				
+	/*數位縣民優惠*/
+	.vp_box{}
+	
+			.vp_box li{ padding:13px 10px;}
+				.vp_img{ width:90px; height:56px; border-radius:7px;}
+					.vp_img img{}
+				.vp_data{ width:calc(100% - 100px);}
+					.p_title{ font-size:13px;}
+					.p_describe{ margin-top:10px; font-size:12px; line-height:17px; height:34px;}
+			
+			
+	}
+	

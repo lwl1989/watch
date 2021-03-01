@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>統計數據</title>
+
+	<link rel="stylesheet" href="../css/statistics.css" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- page start -->
+<div class="page" id="app" v-cloak>
+
+	<form>
+		<div class="s_table">
+
+			<table>
+				<tr>
+					<td colspan="2">TTPush</td>
+				</tr>
+
+				<tr v-for="(index, item) in results">
+					<th> {{index[0]}} </th>
+					<td> {{index[1]}} </td>
+				</tr>
+
+			</table>
+
+			<div class="btn_box">
+				<button class="btn_s" @click="handleCurrentChange">查詢</button>
+			</div>
+
+		</div>
+	</form>
+
+</div>
+<!-- page end -->
+
+<!--footer start-->
+<footer class="footer" >
+	<div class="wrap">
+		<p class="copyright">
+			ⓒ 2019 臺東縣政府 All rights reserved.
+		</p>
+	</div>
+</footer>
+<!--footer end-->
+
+</body>
+
+<!--<script src="../js/tools/vue.js"></script>-->
+<!--<script src="../js/tools/axios.min.js"></script>-->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+
+    new Vue({
+        el:'#app',
+
+        data:{
+            results : [],
+        },
+
+        mounted: function() {
+            this.handleCurrentChange();
+        },
+
+        methods: {
+            handleCurrentChange : function() {
+                let that = this;
+                axios.get('/api/summary/export?action=web') .then(function (res) {
+                    that.results = res.data.response;
+                }).catch(() => {
+
+                });
+            }
+        }
+    })
+</script>
+
+</html>

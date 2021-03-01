@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 基本 */
+body{ margin:0px; background:#f7f7f7; font-family: Arial, SimSun, san-serif; }
+
+
+.page { margin:0 auto; text-align:center;}
+
+	.logo{ margin:0 auto; background: url(../images/img_logo.png) no-repeat;}
+	
+	.topic{ color:#000000; letter-spacing:1px;}
+	
+	.notice{ color:#ec4078; letter-spacing:1px;}
+	
+	.content{ color:#494949;}
+
+	
+	
+/* 尾部 */
+.footer{ width:100%; margin:0 auto; color:#717171; text-align:center; position:fixed;}
+.wrap{ margin:0 auto;}
+	.copyright{ color:#626262;}
+	
+	
+	
+
+
+
+/* 各別規格 */
+@media screen and (min-width:768px){
+
+	.logo{ width:130px; height:130px; margin-top:100px; background-size:130px 130px;}
+	
+	.topic{ width:440px; margin:0 auto; margin-top:30px; font-size:20px;}
+	
+	.notice{ width:440px; margin:0 auto; margin-top:65px; font-size:20px;}
+	
+	.content{ width:440px; margin:0 auto; margin-top:25px; font-size:16px; line-height:28px;}
+
+	
+	
+/* 尾部 */
+.footer{ height:60px; font-size:14px; bottom:30px;}	
+	.copyright{ line-height:28px;}
+							
+	}
+		
+	
+	
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+	.logo{ width:130px; height:130px; margin-top:100px; background-size:130px 130px;}
+	
+	.topic{ margin:0 32px; margin-top:30px; font-size:20px;}
+	
+	.notice{ margin:0 32px; margin-top:65px; font-size:20px;}
+	
+	.content{ margin:0 32px; margin-top:25px; font-size:16px; line-height:28px;}
+
+	
+	
+/* 尾部 */
+.footer{ height:60px; font-size:14px; bottom:30px;}
+	.copyright{ line-height:28px;}
+	
+							
+	}
+	
+	
+	
+@media screen and (min-width: 411px) and (max-width: 479px){
+
+	.logo{ width:112px; height:112px; margin-top:86px; background-size:112px 112px;}
+	
+	.topic{ margin:0 24px; margin-top:26px; font-size:17px;}
+	
+	.notice{ margin:0 24px; margin-top:56px; font-size:17px;}
+	
+	.content{ margin:0 24px; margin-top:21px; font-size:14px; line-height:24px;}
+
+	
+	
+/* 尾部 */
+.footer{ height:51px; font-size:12px; bottom:26px;}
+	.copyright{ line-height:24px;}
+	
+							
+	}
+	
+	
+	
+@media screen and (min-width: 375px) and (max-width: 410px){
+
+	.logo{ width:102px; height:102px; margin-top:78px; background-size:102px 102px;}
+	
+	.topic{ margin:0 32px; margin-top:23px; font-size:16px;}
+	
+	.notice{ margin:0 32px; margin-top:51px; font-size:16px;}
+	
+	.content{ margin:0 32px; margin-top:20px; font-size:13px; line-height:22px;}
+
+	
+	
+/* 尾部 */
+.footer{ height:47px; font-size:12px; bottom:23px;}
+	.copyright{ line-height:22px;}
+	
+							
+	}
+	
+	
+	
+@media screen and (min-width: 360px) and (max-width: 374px){
+
+	.logo{ width:98px; height:98px; margin-top:75px; background-size:98px 98px;}
+	
+	.topic{ margin:0 32px; margin-top:23px; font-size:15px;}
+	
+	.notice{ margin:0 32px; margin-top:49px; font-size:15px;}
+	
+	.content{ margin:0 32px; margin-top:19px; font-size:13px; line-height:22px;}
+
+	
+	
+/* 尾部 */
+.footer{ height:45px; font-size:12px; bottom:23px;}
+	.copyright{ line-height:21px;}
+	
+							
+	}
+	
+	
+
+@media only screen and (max-width:359px){
+
+	.logo{ width:88px; height:88px; margin-top:67px; background-size:88px 88px;}
+	
+	.topic{ margin:0 28px; margin-top:20px; font-size:13px;}
+	
+	.notice{ margin:0 28px; margin-top:43px; font-size:13px;}
+	
+	.content{ margin:0 28px; margin-top:17px; font-size:12px; line-height:20px;}
+
+	
+	
+/* 尾部 */
+.footer{ height:40px; font-size:12px; bottom:20px;}
+	.copyright{ line-height:19px;}
+	
+							
+	}
+	
